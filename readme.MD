@@ -25,3 +25,11 @@ go run .
 ```bash
 .\device-simulator-win-amd64.exe 6733
 ```
+
+## Running unit tests
+**Additional Learning experience** - For my own curiosity I decided to implement a couple of simple unit tests to explore how they're written and executed in Go.
+
+1. Launch all unit tests from within the project root
+```bash
+go test ./...
+```
