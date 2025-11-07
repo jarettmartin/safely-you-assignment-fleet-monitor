@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: fleet-monitor
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    environment:
+      - API_PORT=${API_PORT}
+      - API_VERSION=${API_VERSION}
+    restart: unless-stopped
+    volumes:
+      - ./devices.csv:/app/devices.csv
+      - ./.env:/app/.env

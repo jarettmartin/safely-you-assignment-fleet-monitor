@@ -1,0 +1,28 @@
+# Go project gitignore
+
+# Ignore Go build outputs
+
+/bin/
+/build/
+/*.exe
+/*.out
+/*.test
+
+# Ignore Go modules cache
+
+/pkg/
+
+# Ignore OS files
+
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+
+.vscode/
+.idea/
+*.swp
+
+# Ignore environment files
+
+.env
